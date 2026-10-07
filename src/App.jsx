@@ -23,11 +23,11 @@ function useCountUp(target, duration = 1800, start = false) {
 const NAV_LINKS = ["Home", "About", "Skills", "Projects", "Contact"];
 
 const SKILLS = {
-  Frontend:  ["HTML", "CSS", "JavaScript", "Sass", "React", "Vue.js", "Bootstrap", "Responsive Design"],
-  Backend:   ["PHP", "Laravel", "SQL", "MySQL", "Express.js", "Node.js", "RESTful APIs"],
+  Frontend: ["HTML", "CSS", "JavaScript", "Sass", "React", "Vue.js", "Bootstrap", "Responsive Design"],
+  Backend: ["PHP", "Laravel", "SQL", "MySQL", "Express.js", "Node.js", "RESTful APIs"],
   "BI & Data": ["Power BI", "Data Analytics", "Data Visualization", "Business Intelligence", "Big Data", "DAX", "Power Query", "Star Schema", "ETL"],
-  Design:    ["UI/UX Design", "Figma"],
-  Tools:     ["Git", "GitHub", "VS Code", "PHPMyAdmin", "XAMPP", "Chrome DevTools"],
+  Design: ["UI/UX Design", "Figma"],
+  Tools: ["Git", "GitHub", "VS Code", "PHPMyAdmin", "XAMPP", "Chrome DevTools"],
   "Soft Skills": ["Problem Solving", "Analytical Thinking", "Attention to Detail", "Clean Code"],
 };
 
@@ -39,7 +39,7 @@ const PROJECTS = [
     tech: "React · Laravel · REST API · JWT · Chart.js",
     tags: ["React", "Laravel", "REST API", "JWT", "Chart.js", "Dual Dashboard", "HR Tech", "Multi-Language", "Dark Mode"],
     github: "https://github.com/hajarLafdaoui/Employee_management",
-    images: ["/employee/1.png","/employee/2.png","/employee/3.png","/employee/4.png","/employee/5.png","/employee/6.png"],
+    images: ["/employee/1.png", "/employee/2.png", "/employee/3.png", "/employee/4.png", "/employee/5.png", "/employee/6.png"],
   },
   {
     id: 2, category: "Web",
@@ -48,7 +48,7 @@ const PROJECTS = [
     tech: "Vue.js · GSAP · Sass · Responsive Design",
     tags: ["Vue.js", "GSAP", "Sass", "Scroll Animations", "Mobile-First", "Preloader", "Frontend Animation"],
     github: "https://github.com/hajarLafdaoui/floracare-landing-page",
-    images: ["/FloraCare/1.png","/FloraCare/2.png","/FloraCare/3.png","/FloraCare/4.png"],
+    images: ["/FloraCare/1.png", "/FloraCare/2.png", "/FloraCare/3.png", "/FloraCare/4.png"],
   },
   {
     id: 3, category: "Web",
@@ -57,7 +57,7 @@ const PROJECTS = [
     tech: "React · Node.js · Express · PostgreSQL · TailwindCSS",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "E-Commerce", "Admin Dashboard", "Shopping Cart"],
     github: "https://github.com/hajarLafdaoui/Custom-Tech-Accessories-Store",
-    images: ["/eco/1.png","/eco/2.png","/eco/3.png","/eco/4.png","/eco/5.png","/eco/6.png"],
+    images: ["/eco/1.png", "/eco/2.png", "/eco/3.png", "/eco/4.png", "/eco/5.png", "/eco/6.png"],
   },
   {
     id: 10, category: "Web",
@@ -66,7 +66,7 @@ const PROJECTS = [
     tech: "React · Node.js · Express · PostgreSQL · TailwindCSS",
     tags: ["React", "Node.js", "PostgreSQL", "FullCalendar", "Nodemailer", "Role-Based Access", "SaaS", "Real-Time"],
     github: "https://github.com/hajarLafdaoui/Salon-Appointment-Booking-System",
-    images: ["/booking/1.png","/booking/2.png","/booking/3.png","/booking/4.png","/booking/5.png","/booking/6.png"],
+    images: ["/booking/1.png", "/booking/2.png", "/booking/3.png", "/booking/4.png", "/booking/5.png", "/booking/6.png"],
   },
   {
     id: 4, category: "AI",
@@ -75,7 +75,7 @@ const PROJECTS = [
     tech: "Python · Scikit-learn · XGBoost · Streamlit · Plotly",
     tags: ["Python", "Scikit-learn", "XGBoost", "Streamlit", "Plotly", "Classification", "Customer Analytics"],
     github: "https://github.com/hajarLafdaoui/Customer-Churn-Prediction",
-    images: ["/chrun/1.png","/chrun/2.png"],
+    images: ["/chrun/1.png", "/chrun/2.png"],
   },
   {
     id: 5, category: "AI",
@@ -84,7 +84,7 @@ const PROJECTS = [
     tech: "Python · XGBoost · SHAP · Streamlit",
     tags: ["Python", "XGBoost", "SHAP", "Streamlit", "SMOTE", "Anomaly Detection", "Real-Time ML"],
     github: "https://github.com/hajarLafdaoui/fraud-detection-system",
-    images: ["/fraud/1.png","/fraud/2.png"],
+    images: ["/fraud/1.png", "/fraud/2.png"],
   },
   {
     id: 6, category: "AI",
@@ -111,7 +111,7 @@ const PROJECTS = [
     tech: "SQL · Power BI · DAX",
     tags: ["Power BI", "DAX", "SQL", "Inventory", "Supply Chain", "KPI Dashboard", "Logistics"],
     github: "https://github.com/hajarLafdaoui/Inventory-Supply-Analytics",
-    images: ["/Inventory_Dashboard1.png","/Inventory_Dashboard2.png","/Inventory_Dashboard3.png"],
+    images: ["/Inventory_Dashboard1.png", "/Inventory_Dashboard2.png", "/Inventory_Dashboard3.png"],
   },
   {
     id: 9, category: "BI",
@@ -120,7 +120,7 @@ const PROJECTS = [
     tech: "Power BI · SQL · DAX",
     tags: ["Power BI", "DAX", "SQL", "Finance", "Profitability", "Executive Dashboard", "KPI"],
     github: "https://github.com/hajarLafdaoui/Finance-Profitability-Analytics",
-    images: ["/Finance_Dashboard1.png","/Finance_Dashboard2.png","/Finance_Dashboard3.png","/Finance_Dashboard4.png"],
+    images: ["/Finance_Dashboard1.png", "/Finance_Dashboard2.png", "/Finance_Dashboard3.png", "/Finance_Dashboard4.png"],
   },
 ];
 
@@ -161,12 +161,12 @@ function FadeSection({ children, className = "", delay = 0, style = {} }) {
 
 /* ─── ANIMATED HERO BADGES ──────────────────────────────────────────────── */
 const STATS = [
-  { value: 10,  suffix: "",  label: "Projects Built",    icon: "◈" },
-  { value: 3,   suffix: "+", label: "Tech Domains",      icon: "◎" },
-  { value: 20,  suffix: "+", label: "Technologies",      icon: "◇" },
-  { value: 85,  suffix: "%", label: "ML Accuracy",       icon: "◉" },
-  { value: 100, suffix: "%", label: "Open Source",       icon: "◐" },
-  { value: 3,   suffix: "y", label: "Years Learning",    icon: "◑" },
+  { value: 10, suffix: "", label: "Projects Built", icon: "◈" },
+  { value: 3, suffix: "+", label: "Tech Domains", icon: "◎" },
+  { value: 20, suffix: "+", label: "Technologies", icon: "◇" },
+  { value: 85, suffix: "%", label: "ML Accuracy", icon: "◉" },
+  { value: 100, suffix: "%", label: "Open Source", icon: "◐" },
+  { value: 3, suffix: "y", label: "Years Learning", icon: "◑" },
 ];
 
 function AnimatedStat({ value, suffix, label, icon, delay = 0 }) {
@@ -386,55 +386,55 @@ function AiChat() {
     if (open) setTimeout(() => inputRef.current?.focus(), 300);
   }, [open]);
 
-async function send(text) {
-  const q = (text || input).trim();
-  if (!q || loading) return;
-  setInput("");
-  setShowSuggestions(false);
-  setMessages(m => [...m, { role: "user", text: q }]);
-  setLoading(true);
+  async function send(text) {
+    const q = (text || input).trim();
+    if (!q || loading) return;
+    setInput("");
+    setShowSuggestions(false);
+    setMessages(m => [...m, { role: "user", text: q }]);
+    setLoading(true);
 
-  // Simulate typing delay
-  await new Promise(r => setTimeout(r, 700 + Math.random() * 500));
+    // Simulate typing delay
+    await new Promise(r => setTimeout(r, 700 + Math.random() * 500));
 
-  const lower = q.toLowerCase();
-  let reply = "";
+    const lower = q.toLowerCase();
+    let reply = "";
 
-  if (/project|built|work|portfolio|app|system|website/i.test(lower)) {
-    reply = `Hajar has built **10 projects** across 3 domains:\n\n**Web:** HR Management System, FloraCare, Tech Accessories Store, BookGlow\n\n**AI/ML:** Customer Churn Prediction (85% accuracy), Sentinel AI Fraud Detection (85% recall), DocuLocal RAG Q&A\n\n**BI:** Sales Data Warehouse + ETL, Inventory/Supply Chain Analytics, Finance/Profitability Dashboard\n\nAll projects are open source on GitHub!`;
-  } else if (/skill|tech|stack|know|use|language|framework/i.test(lower)) {
-    reply = `Hajar's tech stack covers:\n\n**Frontend:** React, Vue.js, JavaScript, Sass, GSAP, Bootstrap\n**Backend:** Laravel, PHP, Node.js, Express.js, REST APIs\n**Databases:** MySQL, PostgreSQL, MongoDB\n**BI & Data:** Power BI, DAX, ETL, Star Schema\n**AI/ML:** Python, Scikit-learn, XGBoost, LangChain, Streamlit\n**Tools:** Git, Figma, VS Code`;
-  } else if (/hire|available|freelance|job|opportunity|open|intern/i.test(lower)) {
-    reply = `Yes! Hajar is **open to opportunities** including:\n\n- Freelance projects\n- Internships\n- Full-time positions\n\nShe responds within 24 hours. Reach her at **hajarlafdaoui@gmail.com** or connect on LinkedIn.`;
-  } else if (/contact|email|reach|linkedin|github/i.test(lower)) {
-    reply = `You can reach Hajar through:\n\n**Email:** hajarlafdaoui@gmail.com\n**GitHub:** github.com/hajarLafdaoui\n**LinkedIn:** linkedin.com/in/hajar-lafdaoui\n\nShe typically replies within 24 hours!`;
-  } else if (/who|about|herself|background|bio|story/i.test(lower)) {
-    reply = `Hajar Lafdaoui is a **22-year-old Full Stack Developer & BI Engineer** based in Agadir, Morocco.\n\nShe's currently pursuing a Licence in Business Intelligence & Big Data, holds a Diplôme in Digital Development (OFPPT, 2025), and speaks Arabic, English, and French.\n\nShe builds clean, purposeful digital products — from data dashboards to full-stack apps and AI tools.`;
-  } else if (/education|study|degree|school|university|diplom/i.test(lower)) {
-    reply = `Hajar's education:\n\n**2026 – In Progress:** Licence in Business Intelligence & Big Data\n**2025:** Diplôme — Développement Digital, option Web (OFPPT)\n**2022:** Baccalauréat — Sciences Physiques, option Française`;
-  } else if (/language|speak|arabic|french|english/i.test(lower)) {
-    reply = `Hajar speaks **3 languages:**\n\n- **Arabic** — Native\n- **English** — Professional\n- **French** — Fluent`;
-  } else if (/ai|ml|machine learning|python|data/i.test(lower)) {
-    reply = `Hajar has strong **AI & Data skills:**\n\n- Machine Learning with Scikit-learn & XGBoost\n- SHAP explainability for model transparency\n- RAG systems with LangChain + Llama 3.2\n- Power BI dashboards with DAX & ETL pipelines\n- Streamlit for interactive ML apps\n\nHer ML models achieve up to **85% accuracy/recall**.`;
-  } else if (/cv|resume|download/i.test(lower)) {
-    reply = `You can download Hajar's CV directly from the portfolio — look for the **Download CV** button at the top of the page. It's available in both **English (EN)** and **French (FR)**.`;
-  } else if (/location|where|morocco|agadir/i.test(lower)) {
-    reply = `Hajar is based in **Agadir, Morocco** 🇲🇦\n\nShe's open to remote work and international opportunities.`;
-  } else if (/hello|hi|hey|bonjour|salut|مرحبا/i.test(lower)) {
-    reply = `Hi there! 👋 I'm Hajar's AI assistant.\n\nI can tell you about her **skills**, **projects**, **background**, or how to **get in touch**. What would you like to know?`;
-  } else if (/thank|thanks|merci|شكرا/i.test(lower)) {
-    reply = `You're welcome! 😊 Feel free to ask anything else about Hajar's work or how to reach her.`;
-  } else {
-    reply = `Great question! For detailed answers, I'd suggest:\n\n- Browsing the **Projects** and **Skills** sections above\n- Emailing Hajar directly at **hajarlafdaoui@gmail.com**\n- Connecting on **LinkedIn:** linkedin.com/in/hajar-lafdaoui\n\nShe's happy to chat about any opportunities or collaborations!`;
+    if (/project|built|work|portfolio|app|system|website/i.test(lower)) {
+      reply = `Hajar has built **10 projects** across 3 domains:\n\n**Web:** HR Management System, FloraCare, Tech Accessories Store, BookGlow\n\n**AI/ML:** Customer Churn Prediction (85% accuracy), Sentinel AI Fraud Detection (85% recall), DocuLocal RAG Q&A\n\n**BI:** Sales Data Warehouse + ETL, Inventory/Supply Chain Analytics, Finance/Profitability Dashboard\n\nAll projects are open source on GitHub!`;
+    } else if (/skill|tech|stack|know|use|language|framework/i.test(lower)) {
+      reply = `Hajar's tech stack covers:\n\n**Frontend:** React, Vue.js, JavaScript, Sass, GSAP, Bootstrap\n**Backend:** Laravel, PHP, Node.js, Express.js, REST APIs\n**Databases:** MySQL, PostgreSQL, MongoDB\n**BI & Data:** Power BI, DAX, ETL, Star Schema\n**AI/ML:** Python, Scikit-learn, XGBoost, LangChain, Streamlit\n**Tools:** Git, Figma, VS Code`;
+    } else if (/hire|available|freelance|job|opportunity|open|intern/i.test(lower)) {
+      reply = `Yes! Hajar is **open to opportunities** including:\n\n- Freelance projects\n- Internships\n- Full-time positions\n\nShe responds within 24 hours. Reach her at **hajarlafdaoui@gmail.com** or connect on LinkedIn.`;
+    } else if (/contact|email|reach|linkedin|github/i.test(lower)) {
+      reply = `You can reach Hajar through:\n\n**Email:** hajarlafdaoui@gmail.com\n**GitHub:** github.com/hajarLafdaoui\n**LinkedIn:** linkedin.com/in/hajar-lafdaoui\n\nShe typically replies within 24 hours!`;
+    } else if (/who|about|herself|background|bio|story/i.test(lower)) {
+      reply = `Hajar Lafdaoui is a **22-year-old Full Stack Developer & BI Engineer** based in Agadir, Morocco.\n\nShe's currently pursuing a Licence in Business Intelligence & Big Data, holds a Diplôme in Digital Development (OFPPT, 2025), and speaks Arabic, English, and French.\n\nShe builds clean, purposeful digital products — from data dashboards to full-stack apps and AI tools.`;
+    } else if (/education|study|degree|school|university|diplom/i.test(lower)) {
+      reply = `Hajar's education:\n\n**2026 – In Progress:** Licence in Business Intelligence & Big Data\n**2025:** Diplôme — Développement Digital, option Web (OFPPT)\n**2022:** Baccalauréat — Sciences Physiques, option Française`;
+    } else if (/language|speak|arabic|french|english/i.test(lower)) {
+      reply = `Hajar speaks **3 languages:**\n\n- **Arabic** — Native\n- **English** — Professional\n- **French** — Fluent`;
+    } else if (/ai|ml|machine learning|python|data/i.test(lower)) {
+      reply = `Hajar has strong **AI & Data skills:**\n\n- Machine Learning with Scikit-learn & XGBoost\n- SHAP explainability for model transparency\n- RAG systems with LangChain + Llama 3.2\n- Power BI dashboards with DAX & ETL pipelines\n- Streamlit for interactive ML apps\n\nHer ML models achieve up to **85% accuracy/recall**.`;
+    } else if (/cv|resume|download/i.test(lower)) {
+      reply = `You can download Hajar's CV directly from the portfolio — look for the **Download CV** button at the top of the page. It's available in both **English (EN)** and **French (FR)**.`;
+    } else if (/location|where|morocco|agadir/i.test(lower)) {
+      reply = `Hajar is based in **Agadir, Morocco** 🇲🇦\n\nShe's open to remote work and international opportunities.`;
+    } else if (/hello|hi|hey|bonjour|salut|مرحبا/i.test(lower)) {
+      reply = `Hi there! 👋 I'm Hajar's AI assistant.\n\nI can tell you about her **skills**, **projects**, **background**, or how to **get in touch**. What would you like to know?`;
+    } else if (/thank|thanks|merci|شكرا/i.test(lower)) {
+      reply = `You're welcome! 😊 Feel free to ask anything else about Hajar's work or how to reach her.`;
+    } else {
+      reply = `Great question! For detailed answers, I'd suggest:\n\n- Browsing the **Projects** and **Skills** sections above\n- Emailing Hajar directly at **hajarlafdaoui@gmail.com**\n- Connecting on **LinkedIn:** linkedin.com/in/hajar-lafdaoui\n\nShe's happy to chat about any opportunities or collaborations!`;
+    }
+
+    setMessages(m => [...m, { role: "bot", text: reply }]);
+    setLoading(false);
   }
-
-  setMessages(m => [...m, { role: "bot", text: reply }]);
-  setLoading(false);
-}
   function handleKey(e) {
-    if (e.key === "Enter" && !e.shiftKey) { 
-      e.preventDefault(); 
-      send(); 
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      send();
     }
   }
 
@@ -526,7 +526,7 @@ async function send(text) {
             </svg>
           </button>
         </div>
-<div className="chat-hint">AI Assistant · Knows everything about Hajar</div>
+        <div className="chat-hint">AI Assistant · Knows everything about Hajar</div>
 
       </div>
     </>
@@ -536,19 +536,19 @@ async function send(text) {
 /* ─── MAIN COMPONENT ────────────────────────────────────────────────────── */
 
 export default function App() {
-  const [activeTab, setActiveTab]   = useState("All");
+  const [activeTab, setActiveTab] = useState("All");
   const [visibleCount, setVisibleCount] = useState(3);
-  const [navOpen, setNavOpen]       = useState(false);
-  const [scrolled, setScrolled]     = useState(false);
-  const [imgError, setImgError]     = useState(false);
-  const [form, setForm]             = useState({ name: "", email: "", message: "" });
+  const [navOpen, setNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [imgError, setImgError] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [formStatus, setFormStatus] = useState("idle");
-  const [darkMode, setDarkMode]     = useState(() => {
+  const [darkMode, setDarkMode] = useState(() => {
     try { return JSON.parse(localStorage.getItem("darkMode")) || false; } catch { return false; }
   });
 
   useEffect(() => {
-    try { localStorage.setItem("darkMode", JSON.stringify(darkMode)); } catch {}
+    try { localStorage.setItem("darkMode", JSON.stringify(darkMode)); } catch { }
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
@@ -616,8 +616,8 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          name:    form.name.trim(),
-          email:   form.email.trim(),
+          name: form.name.trim(),
+          email: form.email.trim(),
           message: form.message.trim(),
           _subject: `Portfolio message from ${form.name.trim()}`,
         }),
@@ -1382,20 +1382,20 @@ export default function App() {
             <ul className="nav-links">
               {NAV_LINKS.map(l => <li key={l}><button className="nav-btn" onClick={() => scrollTo(l.toLowerCase())}>{l}</button></li>)}
             </ul>
-<button className="theme-btn" onClick={() => setDarkMode(d => !d)} aria-label="Toggle theme">
-  {darkMode ? (
-    // Sun icon (shown in dark mode → click to go light)
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <circle cx="12" cy="12" r="4"/>
-      <path strokeLinecap="round" d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-    </svg>
-  ) : (
-    // Moon icon (shown in light mode → click to go dark)
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-    </svg>
-  )}
-</button>
+            <button className="theme-btn" onClick={() => setDarkMode(d => !d)} aria-label="Toggle theme">
+              {darkMode ? (
+                // Sun icon (shown in dark mode → click to go light)
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <circle cx="12" cy="12" r="4" />
+                  <path strokeLinecap="round" d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+              ) : (
+                // Moon icon (shown in light mode → click to go dark)
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+              )}
+            </button>
 
 
 
@@ -1432,7 +1432,7 @@ export default function App() {
                 <div className="hero-photo-frame">
                   {imgError ? (
                     <div className="hero-photo-placeholder">
-                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="10" stroke="currentColor" strokeWidth="2"/><path d="M4 44c0-11 8.95-20 20-20s20 8.95 20 20" stroke="currentColor" strokeWidth="2"/></svg>
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="10" stroke="currentColor" strokeWidth="2" /><path d="M4 44c0-11 8.95-20 20-20s20 8.95 20 20" stroke="currentColor" strokeWidth="2" /></svg>
                       <span>Add photo at public/profile.jpg</span>
                     </div>
                   ) : (
@@ -1459,15 +1459,31 @@ export default function App() {
                 <div className="info-label">Full Name</div><div className="info-value">Hajar Lafdaoui</div>
                 <div className="info-label">Age</div><div className="info-value">22 years old</div>
                 <div className="info-label">Location</div><div className="info-value">Agadir, Morocco</div>
-                <div className="info-label">Currently</div><div className="info-value">Pursuing Licence in Business Intelligence &amp; Big Data</div>
-                <div className="info-label">Languages</div><LanguageBars />
+                <div className="info-label">Currently</div>
+                <div className="info-value">Master's student in Embedded Artificial Intelligence</div>                <div className="info-label">Languages</div><LanguageBars />
               </div>
               <div>
                 <div className="info-label" style={{ marginBottom: "0.75rem" }}>Education</div>
                 <ul className="edu-list">
-                  <li className="edu-item"><span className="edu-year">2026 – In Progress</span>Licence — Business Intelligence &amp; Big Data</li>
+                  <li className="edu-item"><span className="edu-year">2026 – In Progress</span>Master — Embedded Artificial Intelligence</li>
+                  <li className="edu-item"><span className="edu-year">2026</span>Licence — Business Intelligence &amp; Big Data (Multidisciplinary Faculty of El Jadida)</li>
                   <li className="edu-item"><span className="edu-year">2025</span>Diplôme — Développement Digital, option Web (OFPPT)</li>
                   <li className="edu-item"><span className="edu-year">2022</span>Baccalauréat — Sciences Physiques, option Française</li>
+                </ul>
+                <div className="info-label" style={{ margin: "1.5rem 0 0.75rem" }}>Experience</div>
+                <ul className="edu-list">
+                  <li className="edu-item">
+                    <span className="edu-year">Jul – Sep 2026</span>
+                    Software Developer Intern — ERP platform (Laravel &amp; React): Supply Chain module (suppliers, items, stock, purchase orders) and Farms &amp; Greenhouses management module (daily entries, weekly payroll, transport, quotes), with role-based access control
+                  </li>
+                  <li className="edu-item">
+                    <span className="edu-year">Mar – Apr 2025</span>
+                    Web Developer (Project) — Design and development of an online website for a local association
+                  </li>
+                  <li className="edu-item">
+                    <span className="edu-year">Jul – Aug 2024</span>
+                    Web Development Internship — Affairino, Agadir
+                  </li>
                 </ul>
               </div>
             </div>
