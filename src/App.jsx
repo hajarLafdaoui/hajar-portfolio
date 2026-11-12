@@ -1415,9 +1415,10 @@ export default function App() {
               <div>
                 <div className="hero-eyebrow"><div className="hero-dot" />Available for freelance &amp; opportunities</div>
                 <h1 className="hero-name">Hajar<br /><em>Lafdaoui</em></h1>
-                <p className="hero-role">Full Stack Developer &amp; BI Engineer</p>
+                <p className="hero-role">Full-Stack Web Developer</p>
                 <div className="hero-rule" />
                 <p className="hero-desc">I build clean, purposeful digital products — from data-rich dashboards to full-stack web applications and AI-powered tools. Based in Agadir, Morocco.</p>
+                {/* I build clean, purposeful digital products — from data-rich dashboards to full-stack web applications and AI-powered tools. Based in Agadir, Morocco */}
                 <div className="hero-btns">
                   <div className="cv-group">
                     <span className="cv-main"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v11" /></svg>Download CV</span>
